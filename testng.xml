@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="/Users/urvidhruvchopra/IdeaProjects/ADIB_Automation">
         <classes>
-            <class name="Org.ADIB.HomePageTests">
+            <class name="Org.ADIB.Tests.HomePageTests">
                 <methods>
                     <include name="homePageTesting"/>
                 </methods>
