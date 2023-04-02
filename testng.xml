@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/urvidhruvchopra/IdeaProjects/ADIB_Automation">
+
+<suite name="ADIB Main Header Navigation and Validations Tests" parallel="tests">
+
+    <listeners>
+        <listener class-name="Org.ADIB.Listeners.TestListeners"/>
+    </listeners>
+
+
+    <test verbose="2" preserve-order="true" name="CHROME: Cards Navigation and Validation Tests">
+
+        <parameter name="Browser" value="chrome"/>
+
         <classes>
-            <class name="Org.ADIB.Tests.HomePageTests">
-                <methods>
-                    <include name="homePageTesting"/>
-                </methods>
-            </class>
+            <class name="Org.ADIB.Tests.SkyWardsCardTests"/>
         </classes>
+
     </test>
+
+    <test verbose="2" preserve-order="true" name="FIREFOX: Cards Navigation and Validation Tests">
+
+        <parameter name="Browser" value="firefox"/>
+
+        <classes>
+            <class name="Org.ADIB.Tests.SkyWardsCardTests"/>
+        </classes>
+
+    </test>
+
+
 </suite>
