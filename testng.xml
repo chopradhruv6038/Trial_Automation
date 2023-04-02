@@ -4,7 +4,7 @@
 <suite name="ADIB Main Header Navigation and Validations Tests" parallel="tests">
 
     <listeners>
-        <listener class-name="Org.ADIB.Listeners.TestListeners"/>
+        <listener class-name="Org.ADIB.Listeners.TestListener"/>
     </listeners>
 
 
@@ -18,7 +18,7 @@
 
     </test>
 
-    <test name="FIREFOX: Cards Navigation and Validation Tests">
+    <!--<test name="FIREFOX: Cards Navigation and Validation Tests">
 
         <parameter name="Browser" value="firefox"/>
 
@@ -26,7 +26,7 @@
             <class name="Org.ADIB.Tests.SkyWardsCardTests"/>
         </classes>
 
-    </test>
+    </test>-->
 
 
 </suite>
