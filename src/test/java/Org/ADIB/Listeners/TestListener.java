@@ -30,7 +30,7 @@ public class TestListener implements ITestListener {
     public void onTestStart(ITestResult result) {
         BaseTest baseTest = new BaseTest();
         ExtentReport.startTest(result.getName(), result.getMethod().getDescription())
-                //.assignCategory()
+                .assignCategory(baseTest.getBrowser())
                 //Assigning browser name left using getter method, still to do.
                 .assignAuthor("Dhruv");
         //above line will start the test and will get the test name and method description.

@@ -18,7 +18,7 @@
 
     </test>
 
-    <!--<test name="FIREFOX: Cards Navigation and Validation Tests">
+    <test name="FIREFOX: Cards Navigation and Validation Tests">
 
         <parameter name="Browser" value="firefox"/>
 
@@ -26,7 +26,7 @@
             <class name="Org.ADIB.Tests.SkyWardsCardTests"/>
         </classes>
 
-    </test>-->
+    </test>
 
 
 </suite>
