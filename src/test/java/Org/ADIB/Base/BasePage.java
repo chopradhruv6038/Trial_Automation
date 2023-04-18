@@ -3,6 +3,7 @@ package Org.ADIB.Base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.sql.SQLOutput;
 import java.time.Duration;
 
 public class BasePage {
@@ -11,6 +12,8 @@ public class BasePage {
     protected WebDriverWait wait;
 
     public BasePage(WebDriver driver) {
+
+
 
         this.driver = driver;
 

@@ -2,6 +2,7 @@ package Org.ADIB.Utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -9,6 +10,7 @@ import java.util.Date;
 
 public class TestUtils {
 
+   protected WebDriver driver;
 
     public String dateTime() {
 
@@ -22,6 +24,11 @@ public class TestUtils {
     public Logger log() {
 
         return LogManager.getLogger(Thread.currentThread().getStackTrace()[2].getClassName());
+    }
+
+    public WebDriver getdDriver(){
+
+        return driver;
     }
 
 

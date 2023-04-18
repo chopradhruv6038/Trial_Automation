@@ -91,7 +91,7 @@ public String getActualBannerSubTitle(){
 
 public SkywardsCardsPage validateSkywardsBannerSubTitle(){
 
-        Assert.assertEquals(getActualBannerSubTitle(),"The highest welcome bonus of any travel card in the Middle East!");
+        Assert.assertEquals(getActualBannerSubTitle(),"The highest welcomelaala bonus of any travel card in the Middle East!");
 
         return this;
 }

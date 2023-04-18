@@ -1,30 +1,43 @@
 package Org.ADIB.Listeners;
+
 import Org.ADIB.Base.BaseTest;
+import Org.ADIB.POM.HomePage;
 import Org.ADIB.Reports.ExtentReport;
+import Org.ADIB.Utils.TestUtils;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.Parameters;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
 public class TestListener implements ITestListener {
 
+
+
+
     public void onTestFailure(ITestResult result) {
 
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
-        result.getThrowable().printStackTrace(pw);
-        System.out.println(sw.toString());
+        if (result.getThrowable() != null) {
 
-        ExtentReport.getTest().log(Status.FAIL, "Test Failed");
+            StringWriter sw = new StringWriter();
+            PrintWriter pw = new PrintWriter(sw);
+            result.getThrowable().printStackTrace(pw);
+            System.out.println(sw.toString());
+
+        }
 
 
     }
-
 
     @Override
     public void onTestStart(ITestResult result) {
