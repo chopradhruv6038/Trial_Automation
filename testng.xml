@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ADIB Main Header Navigation and Validations Tests" parallel="tests">
+<suite name="ADIB Main Header Navigation and Validations Tests">
 
     <listeners>
         <listener class-name="Org.ADIB.Listeners.TestListener"/>
     </listeners>
 
 
-    <test name="CHROME: Cards Navigation and Validation Tests">
+    <test name="Firefox: Cards Navigation and Validation Tests">
 
-        <parameter name="Browser" value="chrome"/>
+        <parameter name="Browser" value="firefox"/>
 
         <classes>
             <class name="Org.ADIB.Tests.SkyWardsCardTests"/>
         </classes>
 
     </test>
+    <test name="Chrome: Cards Navigation and Validation Tests">
 
-    <test name="FIREFOX: Cards Navigation and Validation Tests">
-
-        <parameter name="Browser" value="firefox"/>
+        <parameter name="Browser" value="chrome"/>
 
         <classes>
             <class name="Org.ADIB.Tests.SkyWardsCardTests"/>

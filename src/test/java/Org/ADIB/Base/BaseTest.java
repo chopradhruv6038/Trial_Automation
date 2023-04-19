@@ -4,6 +4,7 @@ import Org.ADIB.Factory.DriverManager;
 import Org.ADIB.Reports.ExtentReport;
 import Org.ADIB.Utils.TestUtils;
 import com.aventstack.extentreports.MediaEntityBuilder;
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.OutputType;
@@ -17,6 +18,7 @@ import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class BaseTest {
 
@@ -76,6 +78,16 @@ public class BaseTest {
             TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
             File file = takesScreenshot.getScreenshotAs(OutputType.FILE);
 
+            //converting the file object to base 64 string.
+
+            byte[] encoded = null; //encoded is a variable which is an array of byte
+            try {
+                encoded = Base64.encodeBase64(FileUtils.readFileToByteArray(file)); // reading the file using the method byte by byte and putting it in encoded variable.
+            } catch (IOException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
+
             String imagePath = "Screenshots" + File.separator + getBrowser() + "_" + getDateTime() + File.separator +
                     result.getTestClass().getRealClass().getSimpleName() + File.separator +
                     result.getMethod().getMethodName() + ".png";
@@ -92,17 +104,20 @@ public class BaseTest {
             try {
                 ExtentReport.getTest().fail("Testing Failed",
                         MediaEntityBuilder.createScreenCaptureFromPath(completePath).build());
+                ExtentReport.getTest().fail("Test Failed", // base 64 encoded image which can be emailed as well and could be opened.
+                        MediaEntityBuilder.createScreenCaptureFromBase64String(new String(encoded, StandardCharsets.US_ASCII)).build());
+
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+
             ExtentReport.getTest().fail(result.getThrowable());
-            
+
         }
 
         getDriver().quit();
 
     }
-
 
     TestUtils testUtils = new TestUtils();
     String DateTime = testUtils.dateTime();
@@ -111,8 +126,5 @@ public class BaseTest {
 
         return DateTime;
     }
-
-
-
 }
 
