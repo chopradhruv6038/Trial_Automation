@@ -18,6 +18,7 @@ public class HomePage extends BasePage {
     By PersonalMenu = By.xpath("//ul[@id='tab_bar']//a[normalize-space()='Personal']");
     By CardsMenu = By.linkText("Cards");
     By skywardsCardsLink = By.cssSelector("div[class='main-menu-dropdown-sub'] li:nth-child(1) a:nth-child(1)");
+    By smilesCardPageLink = By.linkText("Smiles Covered Cards");
 
     public synchronized void loadUrl(String url) {
 
@@ -50,6 +51,14 @@ public class HomePage extends BasePage {
 
     }
 
+    public smilesCardPage clickSmilesCardPageLink() {
+
+        actions.moveToElement(wait.until(ExpectedConditions.visibilityOfElementLocated(smilesCardPageLink))).perform();
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(smilesCardPageLink)).click();
+
+        return new smilesCardPage(driver);
+    }
 
 
 }

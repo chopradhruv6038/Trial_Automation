@@ -7,7 +7,7 @@
         <listener class-name="Org.ADIB.Listeners.TestListener"/>
     </listeners>
 
-
+<!--
     <test name="Firefox: Cards Navigation and Validation Tests">
 
         <parameter name="Browser" value="firefox"/>
@@ -16,13 +16,24 @@
             <class name="Org.ADIB.Tests.SkyWardsCardTests"/>
         </classes>
 
-    </test>
-    <test name="Chrome: Cards Navigation and Validation Tests">
+    </test>-->
+
+   <!-- <test name="Chrome: Cards Navigation and Validation Tests">
 
         <parameter name="Browser" value="chrome"/>
 
         <classes>
             <class name="Org.ADIB.Tests.SkyWardsCardTests"/>
+        </classes>
+
+    </test>-->
+
+    <test name="Chrome: Cards Navigation and Validation Tests">
+
+        <parameter name="Browser" value="chrome"/>
+
+        <classes>
+            <class name="Org.ADIB.Tests.ADIBSmilesCoveredCardTests"/>
         </classes>
 
     </test>
