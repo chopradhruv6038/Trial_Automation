@@ -6,10 +6,7 @@ import Org.ADIB.Utils.TestUtils;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
@@ -70,6 +67,7 @@ public class BaseTest {
     }
 
 
+
     @AfterMethod
     public void quitDriver(ITestResult result) throws IOException {
 
@@ -126,5 +124,9 @@ public class BaseTest {
 
         return DateTime;
     }
+
+
+
+
 }
 

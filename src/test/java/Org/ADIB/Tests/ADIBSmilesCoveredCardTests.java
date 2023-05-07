@@ -72,7 +72,9 @@ public class ADIBSmilesCoveredCardTests extends BaseTest {
                 .assertBannerHeaderSmilesCardIsDisplayed()
                 .assertBannerTextIsCorrect(jsonObject.getJSONObject("SmilesCardData").getString("ExpectedHeaderText"))
                 .verifyAdibSmilesSignatureCardIMGIsDisplayed()
-                .assertAdibSmilesSignatureCardHeaderText(jsonObject.getJSONObject("SmilesCardData").getString("SmilesSignatureCardHeader"));
+                .assertAdibSmilesSignatureCardHeaderText(jsonObject.getJSONObject("SmilesCardData").getString("SmilesSignatureCardHeader"))
+                .moveToApplyBtnForSmilesSignatureCard()
+                .clickApplyBtnSmilesSignatureCard().verifySmilesSignatureCardApplyFrameIsDisplayed();
 
     }
 
