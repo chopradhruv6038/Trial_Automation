@@ -12,10 +12,10 @@ public class SkywardsCardsPage extends BasePage {
         super(driver);
     }
 
-    By skywardsPageTitle = By.xpath("//span[normalize-space()='ADIB Emirate Skywards Cards']");
-    By skywardsPageMainIMG = By.id("ctl00_ctl57_g_d47a3ea7_34d6_4dcf_b487_cd85a6e29136_bannerDiv");
-    By skywardsBannerTitle = By.id("ctl00_ctl57_g_d47a3ea7_34d6_4dcf_b487_cd85a6e29136_lblTitle");
-    By skywardsBannerSubTitle = By.id("ctl00_ctl57_g_d47a3ea7_34d6_4dcf_b487_cd85a6e29136_bannerText");
+    private final By skywardsPageTitle = By.xpath("//span[normalize-space()='ADIB Emirate Skywards Cards']");
+    private final By skywardsPageMainIMG = By.id("ctl00_ctl57_g_d47a3ea7_34d6_4dcf_b487_cd85a6e29136_bannerDiv");
+    private final By skywardsBannerTitle = By.id("ctl00_ctl57_g_d47a3ea7_34d6_4dcf_b487_cd85a6e29136_lblTitle");
+    private final By skywardsBannerSubTitle = By.id("ctl00_ctl57_g_d47a3ea7_34d6_4dcf_b487_cd85a6e29136_bannerText");
 
 
     public synchronized SkywardsCardsPage validateSkywardsPageURL() {

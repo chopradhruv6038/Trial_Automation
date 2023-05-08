@@ -15,10 +15,10 @@ public class HomePage extends BasePage {
 
     Actions actions = new Actions(driver);
 
-    By PersonalMenu = By.xpath("//ul[@id='tab_bar']//a[normalize-space()='Personal']");
-    By CardsMenu = By.linkText("Cards");
-    By skywardsCardsLink = By.cssSelector("div[class='main-menu-dropdown-sub'] li:nth-child(1) a:nth-child(1)");
-    By smilesCardPageLink = By.linkText("Smiles Covered Cards");
+    private final By PersonalMenu = By.xpath("//ul[@id='tab_bar']//a[normalize-space()='Personal']");
+    private final By CardsMenu = By.linkText("Cards");
+    private final By skywardsCardsLink = By.cssSelector("div[class='main-menu-dropdown-sub'] li:nth-child(1) a:nth-child(1)");
+    private final By smilesCardPageLink = By.linkText("Smiles Covered Cards");
 
     public synchronized void loadUrl(String url) {
 

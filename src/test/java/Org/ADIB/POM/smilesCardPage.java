@@ -13,13 +13,12 @@ public class smilesCardPage extends BasePage {
     public smilesCardPage(WebDriver driver) {
         super(driver);
     }
-
-
-    By smilesCardBannerHeader = By.xpath("//span[@id=\"ctl00_ctl57_g_a970ec63_8a5f_47eb_9b99_2348d5dedc84_lblTitle\"]");
-    By adicSmilesVisaSignatureCardIMG = By.xpath("(//div[@class='card-image text-center'])[1]");
-    By adibSmilesSignatureCardHeader = By.xpath("(//h4[@class='card-title'])[2]");
-    By smilesSignatureCardApplyButton = By.xpath("(//a[@data-title='ADIB Smiles Visa Signature Card'])[2]");
-    By adibSmilesSignatureCardApplyFrame = By.xpath("//div[@class='ms-dlgFrameContainer']");
+    
+    private final By smilesCardBannerHeader = By.xpath("//span[@id=\"ctl00_ctl57_g_a970ec63_8a5f_47eb_9b99_2348d5dedc84_lblTitle\"]");
+    private final By adicSmilesVisaSignatureCardIMG = By.xpath("(//div[@class='card-image text-center'])[1]");
+    private final By adibSmilesSignatureCardHeader = By.xpath("(//h4[@class='card-title'])[2]");
+    private final By smilesSignatureCardApplyButton = By.xpath("(//a[@data-title='ADIB Smiles Visa Signature Card'])[2]");
+    private final By adibSmilesSignatureCardApplyFrame = By.xpath("//div[@class='ms-dlgFrameContainer']");
 
     public smilesCardPage validateSmilePageUrl(String ExpectedUrl) {
 
