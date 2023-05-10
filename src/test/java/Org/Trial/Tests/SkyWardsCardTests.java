@@ -1,9 +1,9 @@
-package Org.ADIB.Tests;
+package Org.Trial.Tests;
 
-import Org.ADIB.Base.BaseTest;
-import Org.ADIB.POM.HomePage;
-import Org.ADIB.POM.SkywardsCardsPage;
-import Org.ADIB.Utils.TestUtils;
+import Org.Trial.Base.BaseTest;
+import Org.Trial.POM.HomePage;
+import Org.Trial.POM.SkywardsCardsPage;
+import Org.Trial.Utils.TestUtils;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

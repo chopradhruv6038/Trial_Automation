@@ -4,7 +4,7 @@
 <suite name="ADIB Main Header Navigation and Validations Tests">
 
     <listeners>
-        <listener class-name="Org.ADIB.Listeners.TestListener"/>
+        <listener class-name="Org.Trial.Listeners.TestListener"/>
     </listeners>
 
 <!--
@@ -13,7 +13,7 @@
         <parameter name="Browser" value="firefox"/>
 
         <classes>
-            <class name="Org.ADIB.Tests.SkyWardsCardTests"/>
+            <class name="Org.Trial.Tests.SkyWardsCardTests"/>
         </classes>
 
     </test>-->
@@ -23,7 +23,7 @@
         <parameter name="Browser" value="chrome"/>
 
         <classes>
-            <class name="Org.ADIB.Tests.SkyWardsCardTests"/>
+            <class name="Org.Trial.Tests.SkyWardsCardTests"/>
         </classes>
 
     </test>-->
@@ -33,7 +33,7 @@
         <parameter name="Browser" value="chrome"/>
 
         <classes>
-            <class name="Org.ADIB.Tests.ADIBSmilesCoveredCardTests"/>
+            <class name="Org.Trial.Tests.SmilesCoveredCardTests"/>
         </classes>
 
     </test>

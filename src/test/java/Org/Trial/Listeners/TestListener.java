@@ -1,22 +1,12 @@
-package Org.ADIB.Listeners;
+package Org.Trial.Listeners;
 
-import Org.ADIB.Base.BaseTest;
-import Org.ADIB.POM.HomePage;
-import Org.ADIB.Reports.ExtentReport;
-import Org.ADIB.Utils.TestUtils;
-import com.aventstack.extentreports.MediaEntityBuilder;
+import Org.Trial.Base.BaseTest;
+import Org.Trial.Reports.ExtentReport;
 import com.aventstack.extentreports.Status;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.Parameters;
 
-import java.io.File;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 

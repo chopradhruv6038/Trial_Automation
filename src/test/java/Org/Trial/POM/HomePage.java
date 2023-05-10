@@ -1,6 +1,6 @@
-package Org.ADIB.POM;
+package Org.Trial.POM;
 
-import Org.ADIB.Base.BasePage;
+import Org.Trial.Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;

@@ -1,14 +1,12 @@
-package Org.ADIB.Base;
+package Org.Trial.Base;
 
-import Org.ADIB.Factory.DriverManager;
-import Org.ADIB.Reports.ExtentReport;
-import Org.ADIB.Utils.TestUtils;
+import Org.Trial.Factory.DriverManager;
+import Org.Trial.Reports.ExtentReport;
+import Org.Trial.Utils.TestUtils;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.remote.Browser;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -23,15 +21,15 @@ public class BaseTest {
 
     protected static ThreadLocal<String> browserName = new ThreadLocal<String>(); //converting global parameters to thread local object just like we do for web driver;
 
-    ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    public void setDriver(WebDriver driver) {
+    private void setDriver(WebDriver driver) {
 
         this.driver.set(driver);
 
     }
 
-    public WebDriver getDriver() {
+    protected WebDriver getDriver() {
 
         return this.driver.get();
     }

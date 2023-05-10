@@ -1,4 +1,4 @@
-package Org.ADIB.Reports;
+package Org.Trial.Reports;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;

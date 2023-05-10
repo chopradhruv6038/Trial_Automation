@@ -1,4 +1,4 @@
-package Org.ADIB.Objects;
+package Org.Trial.Objects;
 
 public class PojoClass {
 }

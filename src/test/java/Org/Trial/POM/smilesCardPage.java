@@ -1,10 +1,9 @@
-package Org.ADIB.POM;
+package Org.Trial.POM;
 
-import Org.ADIB.Base.BasePage;
+import Org.Trial.Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
@@ -13,7 +12,7 @@ public class smilesCardPage extends BasePage {
     public smilesCardPage(WebDriver driver) {
         super(driver);
     }
-    
+
     private final By smilesCardBannerHeader = By.xpath("//span[@id=\"ctl00_ctl57_g_a970ec63_8a5f_47eb_9b99_2348d5dedc84_lblTitle\"]");
     private final By adicSmilesVisaSignatureCardIMG = By.xpath("(//div[@class='card-image text-center'])[1]");
     private final By adibSmilesSignatureCardHeader = By.xpath("(//h4[@class='card-title'])[2]");

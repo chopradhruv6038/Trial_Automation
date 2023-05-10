@@ -1,8 +1,8 @@
-package Org.ADIB.Tests;
+package Org.Trial.Tests;
 
-import Org.ADIB.Base.BaseTest;
-import Org.ADIB.POM.HomePage;
-import Org.ADIB.Utils.TestUtils;
+import Org.Trial.Base.BaseTest;
+import Org.Trial.POM.HomePage;
+import Org.Trial.Utils.TestUtils;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.BeforeClass;
@@ -14,7 +14,7 @@ import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
-public class ADIBSmilesCoveredCardTests extends BaseTest {
+public class SmilesCoveredCardTests extends BaseTest {
 
     Properties props;
     InputStream configData;

@@ -1,10 +1,8 @@
-package Org.ADIB.Base;
+package Org.Trial.Base;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.sql.SQLOutput;
 import java.time.Duration;
 
 public class BasePage {

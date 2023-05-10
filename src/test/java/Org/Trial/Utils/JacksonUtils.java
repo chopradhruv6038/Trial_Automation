@@ -1,4 +1,4 @@
-package Org.ADIB.Utils;
+package Org.Trial.Utils;
 
 public class JacksonUtils {
 }

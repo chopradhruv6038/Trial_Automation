@@ -1,4 +1,4 @@
-package Org.ADIB.Factory;
+package Org.Trial.Factory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

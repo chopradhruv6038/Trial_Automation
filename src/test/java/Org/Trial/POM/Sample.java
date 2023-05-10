@@ -1,4 +1,4 @@
-package Org.ADIB.POM;
+package Org.Trial.POM;
 
 public class Sample {
 }
