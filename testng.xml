@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ADIB Main Header Navigation and Validations Tests">
+<suite name="ADIB Main Header Navigation and Validations Tests" parallel="tests">
 
     <listeners>
         <listener class-name="Org.Trial.Listeners.TestListener"/>
     </listeners>
 
-<!--
-    <test name="Firefox: Cards Navigation and Validation Tests">
+    <test name="Firefox: Skywards Cards Navigation and Validation Tests">
 
         <parameter name="Browser" value="firefox"/>
 
@@ -16,9 +15,9 @@
             <class name="Org.Trial.Tests.SkyWardsCardTests"/>
         </classes>
 
-    </test>-->
+    </test>
 
-   <!-- <test name="Chrome: Cards Navigation and Validation Tests">
+    <test name="Chrome: Skywards Cards Navigation and Validation Tests">
 
         <parameter name="Browser" value="chrome"/>
 
@@ -26,11 +25,21 @@
             <class name="Org.Trial.Tests.SkyWardsCardTests"/>
         </classes>
 
-    </test>-->
+    </test>
 
-    <test name="Chrome: Cards Navigation and Validation Tests">
+    <test name="Chrome: Smiles Cards Navigation and Validation Tests">
 
         <parameter name="Browser" value="chrome"/>
+
+        <classes>
+            <class name="Org.Trial.Tests.SmilesCoveredCardTests"/>
+        </classes>
+
+    </test>
+
+    <test name="Firefox: Smiles Cards Navigation and Validation Tests">
+
+        <parameter name="Browser" value="firefox"/>
 
         <classes>
             <class name="Org.Trial.Tests.SmilesCoveredCardTests"/>
