@@ -26,10 +26,7 @@ public class TestUtils {
         return LogManager.getLogger(Thread.currentThread().getStackTrace()[2].getClassName());
     }
 
-    public WebDriver getdDriver(){
 
-        return driver;
-    }
 
 
 }
